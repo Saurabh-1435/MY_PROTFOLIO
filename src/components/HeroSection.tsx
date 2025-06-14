@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -8,6 +8,15 @@ const HeroSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleResumeDownload = () => {
+    // Create a temporary link to download resume
+    // You can replace this with actual resume file URL
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Replace with actual resume file path
+    link.download = 'Saurabh_Prakash_Lakhan_Resume.pdf';
+    link.click();
   };
 
   return (
@@ -33,6 +42,14 @@ const HeroSection = () => {
             className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 text-lg hover-glow"
           >
             View Projects
+          </Button>
+          <Button 
+            size="lg"
+            onClick={handleResumeDownload}
+            className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 text-white px-8 py-3 text-lg hover-glow flex items-center space-x-2"
+          >
+            <Download className="w-5 h-5" />
+            <span>Resume</span>
           </Button>
           <Button 
             variant="outline" 

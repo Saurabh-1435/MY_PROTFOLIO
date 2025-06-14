@@ -8,9 +8,10 @@ const Navbar = () => {
 
   const sections = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
+    { id: 'about', label: 'Contact Us' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
+    { id: 'certificates', label: 'Certificates' },
     { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -19,7 +20,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      const sections = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'certificates', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
