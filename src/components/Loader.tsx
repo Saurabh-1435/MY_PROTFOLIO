@@ -130,7 +130,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
       </div>
 
       {/* Custom CSS for additional effects */}
-      <style jsx>{`
+      <style>{`
         @keyframes matrixFall {
           0% { transform: translateY(-100vh); opacity: 1; }
           100% { transform: translateY(100vh); opacity: 0; }
