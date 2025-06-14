@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# 🧑‍💻 Personal Portfolio - Saurabh Lakhan
 
-## Project info
+Welcome to my personal developer portfolio. This website showcases my skills, projects, and experience as a frontend and mobile developer. Built with modern technologies and a focus on performance, interactivity, and clean design.
 
-**URL**: https://lovable.dev/projects/338a7352-b687-4a2e-b06e-860bdb232bf7
+## 🌐 Live Preview
 
-## How can I edit this code?
+👉 [Visit Portfolio Website]
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Tech Stack Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/338a7352-b687-4a2e-b06e-860bdb232bf7) and start prompting.
+🌀 React  
+🟨 JavaScript  
+🎨 CSS3  
+⚡ Vite  
+🎞️ Framer Motion  
+🐙 GitHub
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 📂 Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+src/
+├── assets/ # Images, icons, etc.
+├── components/ # All reusable JSX components
+├── pages/ # Main page sections like Home, About, Services
+├── App.jsx # Main entry component
+├── main.jsx # Vite main entry file
+└── styles/ # Global and component stylesheets
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+yaml
+Copy
+Edit
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📸 Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- ✨ Smooth animations using Framer Motion  
+- 📱 Fully responsive design  
+- 🌑 Dark theme aesthetics  
+- 🧠 Modern UI/UX with 3D effects  
+- 🛠 Easy to scale and customize  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🧑‍💼 About Me
+
+I'm a passionate frontend & mobile developer with a knack for building engaging, efficient, and beautiful digital experiences. I love working with modern web technologies and pushing creative boundaries.
+
+---
+
+## 🛠 How to Run Locally
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
 npm run dev
-```
+📫 Contact Me
+Portfolio: your-portfolio-link.com
 
-**Edit a file directly in GitHub**
+Email: saurabhlakhan4545@gmail.com
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+LinkedIn: https://www.linkedin.com/in/saurabh-lakhan-015777327/
 
-**Use GitHub Codespaces**
+GitHub: github.com/saurabh-1435
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/338a7352-b687-4a2e-b06e-860bdb232bf7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
