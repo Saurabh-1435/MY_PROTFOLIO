@@ -28,16 +28,34 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <EducationSection />
-      <ContactSection />
-      <Footer />
-      <ThemeToggle />
+    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
+      {/* Background Image */}
+      <div 
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: `url('/lovable-uploads/eca949d3-0e41-42f7-a130-3686b5805e83.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Dark overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <EducationSection />
+        <ContactSection />
+        <Footer />
+        <ThemeToggle />
+      </div>
     </div>
   );
 };
