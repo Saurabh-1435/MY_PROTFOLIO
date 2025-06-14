@@ -60,7 +60,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-20 px-6 bg-dark-matter-secondary/30">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-white mb-4">
             Technical <span className="text-red-500">Skills</span>
           </h2>
@@ -68,17 +68,22 @@ const SkillsSection = () => {
 
         <div className="space-y-12">
           {skillCategories.map((category, index) => (
-            <div key={category.title} className="glassmorphism p-8 rounded-lg hover-glow" style={{animationDelay: `${index * 0.2}s`}}>
+            <div 
+              key={category.title} 
+              className="glassmorphism p-8 rounded-lg hover-glow animate-slide-in-up" 
+              style={{animationDelay: `${index * 0.2}s`}}
+            >
               <h3 className="text-2xl font-semibold text-white mb-8 text-center border-b border-red-500/30 pb-4">
                 {category.title}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {category.skills.map((skill) => (
+                {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skill.name}
-                    className="flex flex-col items-center p-4 bg-white/5 rounded-xl hover:bg-red-500/10 transition-all duration-300 cursor-default group hover:scale-105"
+                    className="flex flex-col items-center p-4 bg-white/5 rounded-xl hover:bg-red-500/10 transition-all duration-300 cursor-default group hover:scale-105 animate-fade-in"
+                    style={{animationDelay: `${(index * 0.2) + (skillIndex * 0.1)}s`}}
                   >
-                    <span className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300 animate-float" style={{animationDelay: `${skillIndex * 0.5}s`}}>
                       {skill.icon}
                     </span>
                     <span className={`text-sm font-medium ${skill.color} group-hover:text-white transition-colors duration-300`}>
