@@ -26,7 +26,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
         className="absolute inset-0"
         style={{
           backgroundImage: `url('/lovable-uploads/eca949d3-0e41-42f7-a130-3686b5805e83.png')`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
