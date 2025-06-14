@@ -41,6 +41,19 @@ const SkillsSection = () => {
         { name: "Postman", icon: "📮", color: "text-orange-500" },
         { name: "Figma", icon: "🎨", color: "text-pink-400" }
       ]
+    },
+    {
+      title: "Soft Skills",
+      skills: [
+        { name: "Problem Solving", icon: "🧩", color: "text-blue-400" },
+        { name: "Team Collaboration", icon: "🤝", color: "text-green-400" },
+        { name: "Communication", icon: "💬", color: "text-purple-400" },
+        { name: "Critical Thinking", icon: "🎯", color: "text-red-400" },
+        { name: "Time Management", icon: "⏰", color: "text-yellow-400" },
+        { name: "Adaptability", icon: "🔄", color: "text-cyan-400" },
+        { name: "Leadership", icon: "👑", color: "text-orange-400" },
+        { name: "Creativity", icon: "✨", color: "text-pink-400" }
+      ]
     }
   ];
 
